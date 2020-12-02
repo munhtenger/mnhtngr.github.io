@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+            function Find_Time()
+        {
+			var a=25,b=18,d1,d2,txt;
+			var c=Number(document.getElementById("N").value);
+			c=c/b-c/a;
+			c=c*60;
+            d1=parseInt(c);
+            c=c-d1;
+            c=c*60;
+            d2=parseInt(c);
+            txt=d1+"minut"+d2+"secund daraa guitsene!"
+            document.getElementById("here").innerHTML=txt;
+        }
+		</script>
+	</head>
+	<body>
+		<br>
+		<h1>Niit zamiin urtiig oruulna uu</h1>
+		Enter The Number a=:<input type="number"  id = "N"/>
+		<h4 id="here"></h4>
+		<hr color="cyan">
+		<br>
+		<center><button onClick="Find_Time()">CHECK</button>
+	</body>
